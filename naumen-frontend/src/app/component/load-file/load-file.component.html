@@ -1,0 +1,6 @@
+<div class="m-0 p-5 text-center gap-5 d-lg-grid">
+  <form (submit)="sendFile()" [noValidate]="false">
+    <input type="file" required (change)="onFileSelected($event)">
+    <button type="submit">Send file</button>
+  </form>
+</div>

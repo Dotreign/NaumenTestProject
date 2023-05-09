@@ -1,0 +1,19 @@
+<div class="m-0 p-5 text-center gap-5 d-lg-grid">
+  <button (click)="getRequestStatistic()">Get request statistic</button>
+  <div *ngIf="isRequestsStat">
+    <div style="display: flex; flex-direction: row; column-gap: 5%">
+      <div style="width: 10%">Name</div>
+      <div style="width: 10%">Age</div>
+      <div style="width: 10%">Requests</div>
+    </div>
+    <div *ngFor="let name of names; let i = index" style="display: flex; flex-direction: row; column-gap: 5%;">
+      <div style="width: 10%">{{name.name}}</div>
+      <div style="width: 10%">{{name.age}}</div>
+      <div style="width: 10%">{{name.requests}}</div>
+    </div>
+  </div>
+  <button (click)="getMaxAged()">Get max aged name</button>
+  <div *ngIf="isMaxAgedName">
+    {{ maxAgedName.name }}: {{ maxAgedName.age }}
+  </div>
+</div>

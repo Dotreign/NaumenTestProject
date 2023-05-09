@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  database:
+    image: "postgres:13.3"
+    environment:
+      POSTGRES_DB: name
+      POSTGRES_USER: dot
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
+
+  backend:
+    image: "naumen-backend-image"
+    ports:
+      - "8099:8099"
+
+  frontend:
+    image: "naumen-frontend-image"
+    ports:
+      - "8080:80"

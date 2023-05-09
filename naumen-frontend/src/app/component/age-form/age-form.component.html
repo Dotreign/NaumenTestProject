@@ -1,0 +1,13 @@
+<div class="m-0 p-5 text-center gap-5 d-lg-grid">
+  <h1>Get age</h1>
+  <form [formGroup]="getAgeForm" (ngSubmit)="getAge()" [noValidate]="false">
+    <label for="name">Enter name:</label>
+    <input type="text" name="name" id="name" formControlName="name" required pattern="^[a-zA-Zа-яА-Я]+">
+    <button type="submit"
+    >Get age!</button>
+  </form>
+  <div class="age-block" *ngIf="age_toggle">
+    <h3>There is {{name}}'s age</h3>
+    <div class="age">{{ age }}</div>
+  </div>
+</div>

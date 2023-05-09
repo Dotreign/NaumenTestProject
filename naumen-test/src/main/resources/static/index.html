@@ -1,0 +1,19 @@
+<html>
+<body>
+<form method="POST" enctype="multipart/form-data"
+      action="/load-file/">
+    File to upload: <input type="file" name="file"><br />  <input type="submit"
+                                                     value="Upload"> Press here to upload the file!
+</form>
+<form action="/name/" method="GET" accept-charset="UTF-8">
+    Enter name: <input type="text" name="name">
+    <button type="submit">Get age</button>
+</form>
+<form action="/stats/requests" method="get" accept-charset="UTF-8">
+    <button type="submit">Хочу увидеть всю статистику</button>
+</form>
+<form action="/stats/max-age" method="get" accept-charset="UTF-8">
+    <button type="submit">Хочу увидеть самое старшее имя</button>
+</form>
+</body>
+</html>
