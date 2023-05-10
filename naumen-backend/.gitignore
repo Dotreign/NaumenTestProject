@@ -1,9 +1,13 @@
+.idea
+naumen-backend/.idea
+naumen-frontend/.idea
 HELP.md
 .gradle
-build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+gradlew
+gradlew.bat
 
 ### STS ###
 .apt_generated
